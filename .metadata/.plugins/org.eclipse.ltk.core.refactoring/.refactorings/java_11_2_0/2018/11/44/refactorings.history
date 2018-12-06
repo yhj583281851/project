@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;java_11_2_0&apos; to &apos;com.etc&apos;&#x0D;&#x0A;- Original project: &apos;java_11_2_0&apos;&#x0D;&#x0A;- Original element: &apos;java_11_2_0/src/java_11_2_0&apos;&#x0D;&#x0A;- Renamed element: &apos;java_11_2_0/src/com.etc&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;java_11_2_0&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;java_11_2_0" name="com.etc" qualified="false" references="true" stamp="1541147441890" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Property_Client">
+        <wb-resource deploy-path="/" source-path="/src/main/web"/>
+        <property name="context-root" value="Property_Client"/>
+        <property name="java-output-path" value="/Property_Client/target/classes"/>
+    </wb-module>
+</project-modules>

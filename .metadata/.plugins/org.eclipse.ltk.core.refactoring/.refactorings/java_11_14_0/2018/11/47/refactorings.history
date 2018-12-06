@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 7 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;java_11_14_0&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     slf4j-log4j12-1.6.1.jar&#x0D;&#x0A;     gson-2.3.1.jar&#x0D;&#x0A;     log4j-1.2.16.jar&#x0D;&#x0A;     slf4j-api-1.6.1.jar&#x0D;&#x0A;     jline-0.9.94.jar&#x0D;&#x0A;     zookeeper-3.4.10.jar&#x0D;&#x0A;     netty-3.10.5.Final.jar" description="Copy files" element1="lib/slf4j-log4j12-1.6.1.jar" element2="lib/gson-2.3.1.jar" element3="lib/log4j-1.2.16.jar" element4="lib/slf4j-api-1.6.1.jar" element5="lib/jline-0.9.94.jar" element6="lib/zookeeper-3.4.10.jar" element7="lib/netty-3.10.5.Final.jar" files="7" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1542596165347" target="/java_11_15_0/lib" units="0" version="1.0"/>
+</session>

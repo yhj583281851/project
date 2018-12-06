@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.etc.PayServerCnsumer.java&apos; to &apos;PayServerConsumer.java&apos;&#x0D;&#x0A;- Original project: &apos;java_11_15_0&apos;&#x0D;&#x0A;- Original element: &apos;com.etc.PayServerCnsumer.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.etc.PayServerConsumer.java&apos;" description="Rename compilation unit &apos;PayServerCnsumer.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.etc{PayServerCnsumer.java" name="PayServerConsumer.java" references="false" stamp="1542614520902" version="1.0"/>
+</session>

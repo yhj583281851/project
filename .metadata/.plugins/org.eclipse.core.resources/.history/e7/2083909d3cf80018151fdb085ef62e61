@@ -1,0 +1,4 @@
+jdbcUrl=jdbc:mysql:///etc
+driverClass=com.mysql.jdbc.Driver
+user=root
+password=111111

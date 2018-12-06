@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<!-- 扫描包路径,不扫Controller -->
+<context:component-scan base-package="com.etc" use-default-filters="false">
+<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+</context:component-scan>
+
+<bean id="comboPooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+<property name="jdbcUrl" value="${jdbcUrl}"></property>
+<property name="driverClass" value="${driverClass}"></property>
+<property name="user" value="${user}"></property>
+<property name="password" value="${password}"></property>
+</bean>
+
+<bean class="org.mybatis.spring.SqlSessionFactoryBean">
+<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+<property name="dataSource" ref="comboPooledDataSource"></property>
+<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+</bean>
+
+</beans>

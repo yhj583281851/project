@@ -1,0 +1,21 @@
+package com.property.service;
+
+import java.util.List;
+
+import com.property.bean.User;
+import com.property.bean.UserExample;
+import com.property.dao.UserMapper;
+
+public class UserService {
+
+	UserMapper userMapper;
+	
+	
+	/***
+	 * ∑µªÿµ•“≥≤È—Ø
+	 */
+	public List<User> selectOnePageUser() {
+		return userMapper.selectByExampleWithBLOBs(new UserExample());
+	}
+
+}

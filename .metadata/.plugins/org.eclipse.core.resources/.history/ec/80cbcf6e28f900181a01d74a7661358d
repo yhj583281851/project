@@ -1,0 +1,14 @@
+package com.property.service;
+
+import java.util.List;
+
+import com.property.bean.User;
+
+public class UserService {
+
+	public List<User> selectOnePageUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
