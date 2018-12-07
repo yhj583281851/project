@@ -23,7 +23,7 @@ function to_page(pn){
 			build_user_nav(datas);
 		},
 		error:function(){
-			
+			alert("to_page函数出错！");
 		}
 	});
 }
@@ -41,9 +41,10 @@ function build_user_table(datas){
 		var userAccount = $("<td></td>").append(user.userAccount);
 		var userPassword = $("<td></td>").append(user.userPassword);
 		var userSex = $("<td></td>").append(user.userSex);
-		var userEmail = $("<td></td>").append(user.userEmail);
-		var userIntroduction = $("<td></td>").append(user.userIntroduction);
+		var userAge = $("<td></td>").append(user.userAge);
+		var userAddress = $("<td></td>").append(user.userAddress);
 		var userPhone = $("<td></td>").append(user.userPhone);
+		var userType = $("<td></td>").append(user.userType);
 		//var editBtn = $("<button class='am-btn am-btn-default am-btn-xs am-text-secondary' data-toggle='modal' data-target='#update_modal'><span class='am-icon-pencil-square-o'></span> 编辑</button>");
 		var editBtn = $("<button class='am-btn am-btn-default am-btn-xs am-text-secondary edit_btn'><span class='am-icon-pencil-square-o'></span> 编辑</button>");
 		
@@ -56,7 +57,7 @@ function build_user_table(datas){
 		
 		
 		var Btn = $("<td><div class='am-btn-toolbar'><div class='am-btn-group am-btn-group-xs'></div></div></td>").append(editBtn).append(deleteBtn);
-		$("<tr></tr>").append(checkbox).append(userId).append(userAccount).append(userPassword).append(userName).append(userSex).append(userEmail).append(userIntroduction).append(userPhone).append(Btn).appendTo("#user_table");
+		$("<tr></tr>").append(checkbox).append(userId).append(userAccount).append(userPassword).append(userName).append(userSex).append(userAge).append(userAddress).append(userPhone).append(userType).append(Btn).appendTo("#user_table");
 	});
 }
 

@@ -129,19 +129,24 @@
 								placeholder="请输入性别"> <span class="help-block"></span>
 						</div>
 						<div class="form-group">
-							<label for="exampleInputPassword1">邮箱</label> <input type="text"
-								class="form-control" id="insert_user_email" name="userEmail"
-								placeholder="请输入邮箱地址"> <span class="help-block"></span>
+							<label for="exampleInputPassword1">年龄</label> <input type="text"
+								class="form-control" id="insert_user_age" name="userAge"
+								placeholder="请输入年龄"> <span class="help-block"></span>
 						</div>
 						<div class="form-group">
-							<label for="exampleInputPassword1">简介</label> <input type="text"
-								class="form-control" id="insert_user_introduction" name="userIntroduction"
-								placeholder="请输入个人介绍"> <span class="help-block"></span>
+							<label for="exampleInputPassword1">地址</label> <input type="text"
+								class="form-control" id="insert_user_address" name="userAddress"
+								placeholder="请输入住处地址"> <span class="help-block"></span>
 						</div>
 						<div class="form-group">
 							<label for="exampleInputPassword1">电话</label> <input type="text"
 								class="form-control" id="insert_user_phone" name="userPhone"
 								placeholder="请输入电话号码"> <span class="help-block"></span>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">用户类型</label> <input type="text"
+								class="form-control" id="insert_user_type" name="userType"
+								placeholder="请选择用户类型"> <span class="help-block"></span>
 						</div>
 						
 

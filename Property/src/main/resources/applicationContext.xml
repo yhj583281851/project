@@ -5,22 +5,33 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-<!-- 扫描包路径,不扫Controller -->
-<context:component-scan base-package="com.yhj" use-default-filters="false">
-<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+<!-- 扫描包路径 -->
+<context:component-scan base-package="com.property">
+	<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 </context:component-scan>
 
-<bean id="comboPooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
-<property name="jdbcUrl" value="${jdbcUrl}"></property>
-<property name="driverClass" value="${driverClass}"></property>
-<property name="user" value="${user}"></property>
-<property name="password" value="${password}"></property>
+<!-- 引入db.properties -->
+<context:property-placeholder location="classpath:db.properties"/>
+
+<!-- c3p0 -->
+<bean id="ComboPooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	<property name="user" value="${user}"></property>
+	<property name="password" value="${password}"></property>
+	<property name="jdbcUrl" value="${jdbcUrl}"></property>
+	<property name="driverClass" value="${driverClass}"></property>
 </bean>
 
+<!-- 创建sqlSessionFactory单例 -->
 <bean class="org.mybatis.spring.SqlSessionFactoryBean">
-<property name="configLocation" value="classpath:mybatis-config.xml"></property>
-<property name="dataSource" ref="comboPooledDataSource"></property>
-<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
+	<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+	<property name="dataSource" ref="ComboPooledDataSource"></property>
+	<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
 </bean>
+
+<!-- 扫描整个com.chunyin.dao包接口路径，获取mapper接口 -->
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+<property name="basePackage" value="com.property.dao"></property>
+</bean>
+
 
 </beans>
